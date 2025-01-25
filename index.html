@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Trip Planner</title>
+  <title>Trip Planner</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>Simple Trip Planner</h1>
+    <h1>Trip Planner</h1>
     <form id="trip-form">
+      <!-- Basic Trip Info -->
       <label for="destination">Destination:</label>
       <input type="text" id="destination" placeholder="Enter destination" required>
       
@@ -18,6 +19,30 @@
       
       <label for="activities">Activities (comma-separated):</label>
       <input type="text" id="activities" placeholder="e.g., hiking, sightseeing">
+      
+      <!-- Accommodation Info -->
+      <label for="accommodation">Accommodation (Hotel Name & Address):</label>
+      <input type="text" id="accommodation" placeholder="e.g., Hotel XYZ, Address">
+      
+      <!-- Transportation Info -->
+      <label for="transportation">Transportation (Flight Details, Rental, etc.):</label>
+      <input type="text" id="transportation" placeholder="e.g., Flight ABC123, Car Rental">
+      
+      <!-- Packing List -->
+      <label for="packing-list">Packing List (comma-separated):</label>
+      <input type="text" id="packing-list" placeholder="e.g., Clothes, Toothbrush">
+      
+      <!-- Health and Safety -->
+      <label for="health-safety">Health & Safety Info:</label>
+      <input type="text" id="health-safety" placeholder="e.g., Vaccination requirements, Emergency contact">
+      
+      <!-- Documents -->
+      <label for="documents">Documents (Passport, Visa, etc.):</label>
+      <input type="text" id="documents" placeholder="e.g., Passport, Visa">
+      
+      <!-- Weather Forecast -->
+      <label for="weather">Weather Forecast:</label>
+      <input type="text" id="weather" placeholder="e.g., Sunny, 75°F">
       
       <button type="submit">Add Trip</button>
     </form>
